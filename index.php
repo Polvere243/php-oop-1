@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/data/movies.php';
+require __DIR__ . '/models/Director.php';
 
 ?>
 
@@ -18,10 +19,12 @@ require __DIR__ . '/data/movies.php';
     <h1>FILM</h1>
     <?php foreach ($movies as $movie) : ?> 
         <h2>Titolo: <?=$movie ->title?></h2>
+        <h3>Regista: <?=$director ?></h3>
         <h4>Durata: <?=$movie ->duration?></h4>
         <h4>Incasso: <?=$movie ->earning?></h4>
         <p><strong>Battuta Epica: </strong><?=$movie ->line?></p>
     <?php endforeach ?>
+    
 </body>
 </html>
 

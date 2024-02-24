@@ -4,13 +4,15 @@ class Movies
  {
     // variabili d'istanza
     public $title;
+    public $director;
     public $duration;
     public $earning;
     public $line;
     
     // costruttore
-    public function __construct($title, $duration, $line, $earning = null) {
+    public function __construct($title, Director $director, $duration, $line, $earning = null) {
         $this ->title = $title;
+        $this ->director = $director;
         $this ->duration = $duration;
         $this ->line = $line;
         $this ->earning = $earning;
@@ -21,3 +23,5 @@ class Movies
         echo $this->line;
     }
 }
+
+$director = `$first_name $last_name`;
