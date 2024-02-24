@@ -1,17 +1,16 @@
 <?php
 // classe
-class Movies {
+class Movies
+ {
     // variabili d'istanza
     public $title;
-    public $plot;
     public $duration;
     public $earning;
     public $line;
     
     // costruttore
-    public function __construct($title, $plot, $duration, $earning, $line) {
+    public function __construct($title, $duration, $earning = null, $line) {
         $this ->title = $title;
-        $this ->plot = $plot;
         $this ->duration = $duration;
         $this ->earning = $earning;
         $this ->line = $line;
@@ -21,3 +20,8 @@ class Movies {
         echo $this->line;
     }
 }
+
+$batman_v_superman = new Movies ('Batman v Superman, dawn of justice', '181 min', '874362803', 'Dimmi: tu sanguini? Gronderai!');
+
+$justice_league = new Movies ('Zack Snyder \' Justice League', '242 min', 'Non m\'importa quanti demoni in quanti inferni. Non ha mai combattuto con noi. Non con noi uniti');
+
