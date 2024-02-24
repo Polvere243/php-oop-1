@@ -1,12 +1,12 @@
 <?php
-
+// dichiaro la classe
 class Director 
 {
     public $first_name;
     public $last_name;
     public $age;
     public $country;
-
+    // costruttore
     public function __construct ($first_name, $last_name) 
     {
         $this ->first_name = $first_name;
