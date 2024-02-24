@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__ . '/Director.php';
+
 // classe
 class Movies
  {
@@ -24,4 +27,3 @@ class Movies
     }
 }
 
-$director = `$first_name $last_name`;
