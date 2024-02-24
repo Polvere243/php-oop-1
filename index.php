@@ -16,7 +16,8 @@ class Movies
         $this ->earning = $earning;
     }
 
-    public function printALine() {
+    public function printALine() 
+    {
         echo $this->line;
     }
 }
