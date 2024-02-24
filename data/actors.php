@@ -8,4 +8,3 @@ $momoa = new Actor ('Jason', 'Momoa');
 $miller = new Actor ('Ezra', 'Miller');
 $fisher = new Actor ('Ray', 'fisher');
 
-$cast = [$cavill, $affleck, $gadot, $momoa, $miller, $fisher];

@@ -15,10 +15,10 @@ class Movies
     public $line;
     
     // costruttore
-    public function __construct($title, Director $director, $cast, $duration, $line, $earning = null) {
+    public function __construct($title, Director $director, Actor $actors, $duration, $line, $earning = null) {
         $this ->title = $title;
         $this ->director = $director;
-        $this ->cast;
+        $this ->actors = $actors;
         $this ->duration = $duration;
         $this ->line = $line;
         $this ->earning = $earning;
@@ -29,4 +29,6 @@ class Movies
         echo $this->line;
     }
 }
+
+$cast = [$cavill, $affleck, $gadot, $momoa, $miller, $fisher];
 
