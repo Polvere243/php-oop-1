@@ -2,6 +2,7 @@
 // dichiaro la classe
 class Director 
 {
+    // variabili d'istanza
     public $first_name;
     public $last_name;
     public $age;
