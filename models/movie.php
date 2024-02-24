@@ -9,16 +9,16 @@ class Movies
     // variabili d'istanza
     public $title;
     public $director;
-    public $cast = [];
+    public $cast;
     public $duration;
     public $earning;
     public $line;
     
     // costruttore
-    public function __construct($title, Director $director, Actor $cast, $duration, $line, $earning = null) {
+    public function __construct($title, Director $director, $cast, $duration, $line, $earning = null) {
         $this ->title = $title;
         $this ->director = $director;
-        $this ->cast = array($cast);
+        $this ->cast;
         $this ->duration = $duration;
         $this ->line = $line;
         $this ->earning = $earning;

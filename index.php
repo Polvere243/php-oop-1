@@ -22,11 +22,6 @@ require_once __DIR__ . '/data/actors.php';
     <?php foreach ($movies as $movie) : ?> 
         <h2>Titolo: <?=$movie ->title?></h2>
         <h3>Regista: <?= $snyder ->first_name?> <?= $snyder ->last_name?></h3>
-        <h3>Cast: <?php foreach ($cast as $actor):?>
-        <span><?=$actor ?>,</span>
-        <?php endforeach;?>
-        
-        </h3>
         <h4>Durata: <?=$movie ->duration?></h4>
         <h4>Incasso: <?=$movie ->earning?></h4>
         <p><strong>Battuta Epica: </strong><?=$movie ->line?></p>
