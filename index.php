@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/data/movies.php';
-require_once __DIR__ . '/models/Director.php';
-require_once __DIR__ . '/data/directors.php';
-require_once __DIR__ . '/data/actors.php';
+include_once __DIR__ . '/data/movies.php';
+include_once __DIR__ . '/models/Director.php';
+include_once __DIR__ . '/data/directors.php';
+include_once __DIR__ . '/data/actors.php';
 
 ?>
 
@@ -22,11 +22,12 @@ require_once __DIR__ . '/data/actors.php';
     <?php foreach ($movies as $movie) : ?> 
         <h2>Titolo: <?=$movie ->title?></h2>
         <h3>Regista: <?= $snyder ->first_name?> <?= $snyder ->last_name?></h3>
-        <h3>Cast: <?php foreach ($actors as $actor) :?>
-            <span><?=$actor->first_name?></span><span><?=$actor->last_name?></span>
-        <?php endforeach?></h3>
+        <p>
+            <strong>Cast: </strong><?= $movie ->getCast()?>.
+        </p>
         <h4>Durata: <?=$movie ->duration?></h4>
         <h4>Incasso: <?=$movie ->earning?></h4>
+        
         <p><strong>Battuta Epica: </strong><?=$movie ->line?></p>
     <?php endforeach ?>
     
